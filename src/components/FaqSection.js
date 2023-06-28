@@ -7,14 +7,14 @@ import {
 } from "./Styles";
 import ToggleFaq from './ToggleFaq.js';
 import styled from 'styled-components';
-import { AnimateSharedLayout } from 'framer-motion';
+import { LayoutGroup , motion } from 'framer-motion';
 export default function FaqSection () {
   return (
     <StyledFaq>
       <h2>
         Ant Questions <span>FAQ</span>
       </h2>
-      <AnimateSharedLayout>
+      <LayoutGroup>
         
           <ToggleFaq title="What we do?">
             <div className="answer">
@@ -58,7 +58,7 @@ export default function FaqSection () {
               </p>
             </div>
           </ToggleFaq>
-      </AnimateSharedLayout>
+      </LayoutGroup>
 
     </StyledFaq>
   );
